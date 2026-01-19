@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ayksound — Heaven‑Tier Beat Intelligence</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <h1 class="logo">🌊 ayksound</h1>
+  <nav>
+    <a href="#analyze">Analyze</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Advanced Beat Analysis for Producers</h2>
+  <p>Find the BPM, Key & Detune of your tracks with precision.</p>
+</section>
+
+<section id="analyze" class="analyzer">
+  <label for="audioFile" class="upload-btn">Upload Your Tracks</label>
+  <input type="file" id="audioFile" accept="audio/*" style="display: none;">
+  <button onclick="analyze()">Analyze Beat</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><th>BPM</th><td id="bpm">—</td></tr>
+      <tr><th>Key</th><td id="key">—</td></tr>
+      <tr><th>Camelot</th><td id="camelot">—</td></tr>
+      <tr><th>Detune</th><td id="detune">—</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="pricing" class="pricing">
+  <div class="card">
+    <h3>Free</h3>
+    <p>Basic Analysis Tools</p>
+    <button>Get Started</button>
+  </div>
+  <div class="card popular">
+    <h3>Pro</h3>
+    <p>Advanced Features</p>
+    <button>Get Started</button>
+  </div>
+  <div class="card">
+    <h3>Premium</h3>
+    <p>Full Access & Support</p>
+    <button>Get Started</button>
+  </div>
+</section>
+
+<footer>© 2026 ayksound</footer>
+<script src="app.js"></script>
+</body>
+</html>
